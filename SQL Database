@@ -1,0 +1,58 @@
+CREATE DATABASE music_portfolio;
+USE music_portfolio;
+
+-- ======================
+-- TABLE PROFILE
+-- ======================
+CREATE TABLE profile (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+INSERT INTO profile (name, description) VALUES
+('Movid.', 'Music Producer • Sound Designer • Creative Technologist');
+
+
+-- ======================
+-- TABLE SKILLS
+-- ======================
+CREATE TABLE skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    skill_name VARCHAR(100),
+    level INT
+);
+
+INSERT INTO skills (skill_name, level) VALUES
+('FL Studio', 90),
+('Mixing & Mastering', 85),
+('Sound Design', 80);
+
+
+-- ======================
+-- TABLE CERTIFICATES
+-- ======================
+CREATE TABLE certificates (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150),
+    description TEXT
+);
+
+INSERT INTO certificates (title, description) VALUES
+('Digital Audio Production', 'Certified Music Production Course'),
+('Sound Engineering Basics', 'Audio Technology Workshop'),
+('Creative Media Technology', 'Multimedia Innovation Training');
+
+
+-- ======================
+-- TABLE EXPERIENCE
+-- ======================
+CREATE TABLE experience (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    description TEXT
+);
+
+INSERT INTO experience (description) VALUES
+('Freelance Music Producer (2023 - Present)'),
+('Campus Multimedia Event – Audio Engineer'),
+('Independent Electronic Music Creator');
