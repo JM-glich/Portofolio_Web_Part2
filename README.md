@@ -1,4 +1,5 @@
-# 🎵 Music Portfolio Website - Movid
+# Music Portfolio Website Part 2
+Nama: Jemis Movid (2409116070)
 
 ## Deskripsi Project
 
